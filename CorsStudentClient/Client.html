@@ -6,19 +6,27 @@
 </head>
 <body>
     <button id="getStudent">Get Students</button>
+    <ul></ul>
     <pre id="preOutput"></pre>
     <script>
-        $('document').ready(function () {
+       /* $('document').ready(function () {
             $('#getStudent').click(function () {
                 var url = "http://localhost:63321/api/student/";
                 $.get(url).always(showResponse);
                 return false;
             });
-        });
-
-        var showResponse = function (object) {
-            $('preOutput').text(JSON.stringify(object, null, 4));
-        };
+        });*/
+        $("#getStudent").click(function () {
+            $.getJSON("http://localhost:63321/api/student", function (data) {
+                //alert(data)
+            $.each(data, function(key, item) {
+                $("ul").append("<li>" + item.StudentId + "  " + item.FirstName + "  " + item.LastName + "  " + item.Program + "</li>")
+            })
+        })
+        })
+        //var showResponse = function (object) {
+          //  $('preOutput').text(JSON.stringify(object, null, 4));
+        //}
     </script>
 </body>
 </html>

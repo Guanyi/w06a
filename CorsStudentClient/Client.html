@@ -17,7 +17,7 @@
             });
         });*/
         $("#getStudent").click(function () {
-            $.getJSON("http://localhost:63321/api/student", function (data) {
+            $.getJSON("http://w06a.feifei.ca/api/student", function (data) {
                 //alert(data)
             $.each(data, function(key, item) {
                 $("ul").append("<li>" + item.StudentId + "  " + item.FirstName + "  " + item.LastName + "  " + item.Program + "</li>")

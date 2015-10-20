@@ -148,10 +148,6 @@
     <Compile Include="Migration\Data\201510200932382_InitialCreate.Designer.cs">
       <DependentUpon>201510200932382_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migration\Data\201510200946147_InitialCreate1.cs" />
-    <Compile Include="Migration\Data\201510200946147_InitialCreate1.Designer.cs">
-      <DependentUpon>201510200946147_InitialCreate1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migration\Data\Configuration.cs" />
     <Compile Include="Models\DataContext.cs" />
     <Compile Include="Models\Student.cs" />
@@ -177,6 +173,9 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <None Include="Properties\PublishProfiles\w06aguanyi %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\w06aguanyi %283%29.pubxml" />
+    <None Include="Properties\PublishProfiles\w06aguanyi %284%29.pubxml" />
     <None Include="Properties\PublishProfiles\w06aguanyi.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -204,9 +203,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Migration\Data\201510200932382_InitialCreate.resx">
       <DependentUpon>201510200932382_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migration\Data\201510200946147_InitialCreate1.resx">
-      <DependentUpon>201510200946147_InitialCreate1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

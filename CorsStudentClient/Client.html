@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>w06a Client</title>
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+    <button id="getStudent">Get Students</button>
+    <pre id="preOutput"></pre>
+    <script>
+        $('document').ready(function () {
+            $('#getStudent').click(function () {
+                var url = "http://localhost:63321/api/student/";
+                $.get(url).always(showResponse);
+                return false;
+            });
+        });
+
+        var showResponse = function (object) {
+            $('preOutput').text(JSON.stringify(object, null, 4));
+        };
+    </script>
+</body>
+</html>
